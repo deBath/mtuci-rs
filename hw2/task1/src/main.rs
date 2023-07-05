@@ -24,3 +24,18 @@ const SEARCH_TERM: &str = "picture";
         .map(|s| {(s.0 + 1).to_string() + ":" + s.1})
         .collect()
  }
+
+
+// ----> TESTS
+#[cfg(test)]
+mod tests {
+    use crate::find_term;
+    use crate::{SEARCH_TERM, QUOTE};
+
+    #[test]
+    fn correct_line() {
+        let answer = find_term(SEARCH_TERM, QUOTE);
+
+        assert_eq!("2: dark square is a picture feverishly turned--in search of what?", answer)
+    }
+}
