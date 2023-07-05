@@ -1,5 +1,5 @@
 [workspace]
 members = [
-	"hw2",
-	"hw2_1"
+	"hw2/Task1/src",
+	"hw2/Task2/src"
 ]
